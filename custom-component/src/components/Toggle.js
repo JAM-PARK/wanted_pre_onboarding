@@ -9,15 +9,13 @@ const Toggle = () => {
   };
 
   return (
-    <>
-      <div className="toggle-container" onClick={handleToggle}>
-        <div className={`toggle-box ${isOn ? 'toggle-checked' : ''}`} />
-        <div className="toggle-circle-container">
-          <div className={`toggle-circle ${isOn ? 'toggle-checked' : ''}`} />
-        </div>
-        <span className="desc">{isOn ? 'Toggle Switch ON' : 'Toggle Switch OFF'}</span>
+    <div className="toggle-container" onClick={handleToggle}>
+      <div className={`toggle-box ${isOn ? 'toggle-checked' : ''}`} />
+      <div className="toggle-circle-container">
+        <div className={`toggle-circle ${isOn ? 'toggle-checked' : ''}`} />
       </div>
-    </>
+      <span className="desc">{isOn ? 'Toggle Switch ON' : 'Toggle Switch OFF'}</span>
+    </div>
   );
 };
 
