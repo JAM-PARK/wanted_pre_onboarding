@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #448bff;
+  width: auto;
+  height: auto;
+
+  > .toggle-container {
+    width: 7.5rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: gray;
+    transition: all 0.2s ease;
+    &.toggle-checked {
+      background-color: #23e0a6;
+    }
+  }
+
+  > .toggle-circle-container {
+    width: 7.5rem;
+    height: 3rem;
+    position: absolute;
+
+    > .toggle-circle {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: #2d5bf1;
+      transition: all 0.25s ease;
+
+      &.toggle-checked {
+        left: 5rem;
+      }
+    }
+  }
+}
+
+.desc {
+  text-align: center;
+}
