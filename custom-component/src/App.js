@@ -3,6 +3,7 @@ import Toggle from './components/Toggle';
 import Modal from './components/Modal';
 import Tab from './components/Tab';
 import Tag from './components/Tag';
+import AutoComplete from './components/AutoComplete';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Modal />
       <Tab />
       <Tag />
+      <AutoComplete />
     </>
   );
 };

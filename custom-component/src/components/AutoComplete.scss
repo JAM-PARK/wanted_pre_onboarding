@@ -1,0 +1,67 @@
+$boxShadow: 2px 4px 4px rgba(33, 33, 33, 0.3);
+$activeBorderRadius: 1rem 1rem 0 0;
+$inactiveBorderRadius: 1rem 1rem 1rem 1rem;
+
+.ac-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #448bff;
+  width: auto;
+  height: auto;
+  padding: 5rem;
+  margin-top: 0.5rem;
+}
+
+.ac-input-box {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  padding: 1rem;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: $activeBorderRadius;
+  box-shadow: $boxShadow;
+
+  &:focus-within {
+    box-shadow: $boxShadow;
+  }
+
+  &.has-no-text {
+    border-radius: $inactiveBorderRadius;
+    box-shadow: none;
+  }
+
+  > input {
+    flex: 1;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  > .close-icon {
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  width: 50rem;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 0 0 1rem 1rem;
+  list-style: none;
+  background-color: white;
+  box-shadow: $boxShadow;
+
+  > li {
+    &.selected {
+      background-color: #ebe5f9;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
