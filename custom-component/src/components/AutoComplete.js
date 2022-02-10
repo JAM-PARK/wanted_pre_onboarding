@@ -78,7 +78,7 @@ const AutoComplete = () => {
         </div>
       </div>
       {hasText ? (
-        <ul className="dropdown">
+        <ul className="ac-dropdown">
           {contents.map((content, idx) => (
             <li
               key={idx}

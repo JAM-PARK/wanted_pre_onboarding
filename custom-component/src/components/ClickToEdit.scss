@@ -1,0 +1,28 @@
+.cte-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #448bff;
+  width: auto;
+  height: auto;
+  padding: 5rem;
+  margin-top: 0.5rem;
+}
+
+.input-section {
+  margin-bottom: 3rem;
+}
+
+.input-box {
+  display: inline-block;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.input-edit {
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+}
