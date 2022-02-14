@@ -8,15 +8,33 @@ import ClickToEdit from './components/ClickToEdit';
 
 const App = () => {
   return (
-    <>
-      <div>custom-component</div>
-      <Toggle />
-      <Modal />
-      <Tab />
-      <Tag />
-      <AutoComplete />
-      <ClickToEdit />
-    </>
+    <div id="container">
+      <div id="title">Custom Component</div>
+      <div className="box">
+        <div className="sub-title">Toggle</div>
+        <Toggle />
+      </div>
+      <div className="box">
+        <div className="sub-title">Modal</div>
+        <Modal />
+      </div>
+      <div className="box">
+        <div className="sub-title">Tab</div>
+        <Tab />
+      </div>
+      <div className="box">
+        <div className="sub-title">Tag</div>
+        <Tag />
+      </div>
+      <div className="box">
+        <div className="sub-title">AutoComplete</div>
+        <AutoComplete />
+      </div>
+      <div className="box">
+        <div className="sub-title">ClickToEdit</div>
+        <ClickToEdit />
+      </div>
+    </div>
   );
 };
 

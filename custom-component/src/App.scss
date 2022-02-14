@@ -1,5 +1,48 @@
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff')
+    format('woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+* {
+  font-family: 'NEXON Lv1 Gothic OTF', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  font-family: 'GmarketSansBold', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  color: #4000c7;
+}
+.sub-title {
+  font-family: 'GmarketSansBold', sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.box {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #448bff;
+  box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.3);
 }
