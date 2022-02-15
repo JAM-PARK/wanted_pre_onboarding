@@ -18,7 +18,11 @@ const Modal = () => {
             <span className="close-btn" onClick={handleModal}>
               &times;
             </span>
-            <div className="desc">{`HELLO \n`}wanted &times; CODESTATES!</div>
+            <div className="desc">
+              {`HELLO \n`}
+              <span className="wanted">wanted</span> &times;{' '}
+              <span className="codestates">CODESTATES</span> !
+            </div>
           </div>
         </div>
       ) : (

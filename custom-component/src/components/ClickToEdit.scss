@@ -1,11 +1,7 @@
+@import '../styles.scss';
+
 .cte-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px dashed #448bff;
-  width: auto;
-  height: auto;
-  padding: 5rem;
+  @include container;
 }
 
 .input-section {
@@ -20,7 +16,7 @@
   height: 2rem;
   margin-left: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #bbb;
+  border: 1px solid $light-gray;
 }
 
 .input-edit {
@@ -28,4 +24,5 @@
   height: 2rem;
   text-align: center;
   font-size: 1rem;
+  outline-color: $codestates;
 }

@@ -1,19 +1,15 @@
+@import '../styles.scss';
+
 .modal-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px dashed #448bff;
-  width: auto;
-  height: auto;
-  padding: 5rem;
+  @include container;
 }
 
 .modal-btn {
-  background-color: #4000c7;
+  background-color: $wanted-three;
   text-decoration: none;
   border: none;
   padding: 1.5rem;
-  color: white;
+  color: $white;
   border-radius: 3rem;
   cursor: pointer;
 }
@@ -43,7 +39,7 @@
 
 .modal-view {
   border-radius: 1.5rem;
-  background-color: white;
+  background-color: $white;
   width: 21rem;
   height: 7rem;
   text-align: center;
@@ -54,7 +50,12 @@
   }
   > div.desc {
     margin: 22px 0;
-    color: #4000c7;
     white-space: pre-wrap;
+  }
+  > div > span.wanted {
+    color: $wanted-two;
+  }
+  > div > span.codestates {
+    color: $codestates;
   }
 }

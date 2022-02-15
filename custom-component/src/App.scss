@@ -1,3 +1,5 @@
+@import 'styles.scss';
+
 @font-face {
   font-family: 'NEXON Lv1 Gothic OTF';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff')
@@ -33,16 +35,18 @@ body {
   font-size: 3rem;
   text-align: center;
   margin: 1rem;
-  color: #4000c7;
+  color: $codestates;
 }
+
 .sub-title {
   font-family: 'GmarketSansBold', sans-serif;
   font-size: 1rem;
   margin: 0.5rem;
 }
+
 .box {
   margin: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #448bff;
+  border: 1px solid $light-gray;
   box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.3);
 }

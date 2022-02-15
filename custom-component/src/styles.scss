@@ -1,0 +1,28 @@
+// color
+$codestates: #4000c7;
+$code-alpha: rgba(64, 0, 199, 0.1);
+$wanted-one: #23e0a6;
+$wanted-two: #448bff;
+$wanted-three: #2d5bf1;
+$light-gray: rgb(187, 187, 187);
+$white: white;
+
+// mixin
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px dashed $light-gray;
+  width: auto;
+  height: auto;
+  padding: 5rem;
+}
+
+@mixin tag-color($i, $color) {
+  > .tag:nth-child(#{$i}) {
+    background: $color;
+    > .tag-close-icon {
+      color: $color;
+    }
+  }
+}

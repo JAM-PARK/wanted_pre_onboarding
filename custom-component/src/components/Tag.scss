@@ -1,11 +1,7 @@
+@import '../styles.scss';
+
 .tag-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px dashed #448bff;
-  width: auto;
-  height: auto;
-  padding: 5rem;
+  @include container;
 }
 
 .tag-input {
@@ -13,14 +9,15 @@
   width: 50rem;
   height: auto;
   padding: 0 1rem;
-  border: 1px solid rgb(192, 192, 192);
+  border: 1px solid $light-gray;
   border-radius: 0.5rem;
   &:focus-within {
-    border: 1px solid #4000c7;
+    border: 1px solid $wanted-two;
   }
 
   > ul {
     display: flex;
+    width: 70%;
     padding: 0;
     margin: 0.5rem 0 0 0;
     flex-wrap: wrap;
@@ -33,25 +30,38 @@
       margin: 0 0.5rem 0.5rem 0;
       border-radius: 0.5rem;
       list-style: none;
-      // 태그 색상 nth-child
-      background: #4000c7;
-      color: #fff;
+      color: $white;
+
       > .tag-close-icon {
         width: 1rem;
         height: 1rem;
         margin-left: 0.5rem;
         border-radius: 50%;
         text-align: center;
-        color: #4000c7;
-        background: white;
+        background: $white;
         cursor: pointer;
+      }
+    }
+
+    @for $i from 1 through 100 {
+      @if $i % 4 == 1 {
+        @include tag-color($i, $codestates);
+      }
+      @if $i % 4 == 2 {
+        @include tag-color($i, $wanted-one);
+      }
+      @if $i % 4 == 3 {
+        @include tag-color($i, $wanted-two);
+      }
+      @if $i % 4 == 0 {
+        @include tag-color($i, $wanted-three);
       }
     }
   }
   > input {
     flex: 1;
     border: none;
-    padding: 0 0 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
     font-size: 1rem;
     &:focus {
       outline: none;

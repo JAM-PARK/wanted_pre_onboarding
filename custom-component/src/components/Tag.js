@@ -2,7 +2,7 @@ import './Tag.scss';
 import { useState } from 'react';
 
 const Tag = () => {
-  const initialTags = ['wanted', 'CODESTATES', '프리온보딩', '프론트엔드'];
+  const initialTags = ['CODESTATES', 'wanted', '프리온보딩', '프론트엔드'];
   const [tags, setTags] = useState(initialTags);
 
   const deleteTags = (idxToDelete) => {
@@ -33,7 +33,7 @@ const Tag = () => {
         <input
           type="text"
           onKeyUp={(e) => (e.key === 'Enter' ? addTags(e) : '')}
-          placeholder="Press enter to add tag"
+          placeholder="Press enter to add a tag"
         />
       </div>
     </div>

@@ -1,15 +1,11 @@
+@import '../styles.scss';
+
 $boxShadow: 2px 4px 4px rgba(33, 33, 33, 0.3);
 $activeBorderRadius: 1rem 1rem 0 0;
 $inactiveBorderRadius: 1rem 1rem 1rem 1rem;
 
 .ac-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px dashed #448bff;
-  width: auto;
-  height: auto;
-  padding: 5rem;
+  @include container;
 }
 
 .ac-input-box {
@@ -17,8 +13,7 @@ $inactiveBorderRadius: 1rem 1rem 1rem 1rem;
   flex-direction: row;
   width: 50rem;
   padding: 1rem;
-  // border: 1px solid rgb(222, 222, 222);
-  border: 1px solid #bbb;
+  border: 1px solid $light-gray;
   border-radius: $activeBorderRadius;
   box-shadow: $boxShadow;
 
@@ -49,21 +44,20 @@ $inactiveBorderRadius: 1rem 1rem 1rem 1rem;
   width: 50rem;
   margin: 0;
   padding: 1rem;
-  // border: 1px solid rgb(222, 222, 222);
-  border: 1px solid #bbb;
+  border: 1px solid $light-gray;
   border-top: 0px;
   border-radius: 0 0 1rem 1rem;
   list-style: none;
-  background-color: white;
+  background-color: $white;
   box-shadow: $boxShadow;
 
   > li {
     &.selected {
-      background-color: #ebe5f9;
+      background-color: $code-alpha;
     }
 
     &:hover {
-      background-color: #eee;
+      background-color: rgba(233, 233, 233, 0.7);
     }
   }
 }

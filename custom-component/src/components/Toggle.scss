@@ -1,22 +1,17 @@
+@import '../styles.scss';
+
 .toggle-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px dashed #448bff;
-  width: auto;
-  height: auto;
-  padding: 5rem;
-  cursor: pointer;
+  @include container;
 
   > .toggle-box {
     width: 7.5rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: gray;
+    background-color: $light-gray;
     transition: all 0.3s ease;
+    cursor: pointer;
     &.toggle-checked {
-      background-color: #23e0a6;
+      background-color: $wanted-one;
     }
   }
 
@@ -24,6 +19,7 @@
     width: 7.5rem;
     height: 3rem;
     position: absolute;
+    cursor: pointer;
 
     > .toggle-circle {
       position: absolute;
@@ -32,7 +28,7 @@
       width: 2rem;
       height: 2rem;
       border-radius: 50%;
-      background-color: #2d5bf1;
+      background-color: $white;
       transition: all 0.3s ease;
 
       &.toggle-checked {
